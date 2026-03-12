@@ -1,0 +1,9 @@
+{
+  "model": "SM-A9",
+  "soc": "mt8781",
+  "branch": "main",
+  "manifest_main": "https://raw.githubusercontent.com/nullptr-t-oss/kernel_patches/refs/heads/main/kernel_manifest/samsung_a9.xml",
+  "android_version": "android12",
+  "kernel_version": "5.10",
+  "hmbird": false
+}
