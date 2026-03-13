@@ -333,7 +333,7 @@ runs:
 
         # Ensure Python warnings are suppressed for scripts invoked by make
         export PYTHONWARNINGS="${PYTHONWARNINGS}"
-
+        echo "$GITHUB_WORKSPACE/$CONFIG/kernel_platform/build/build-tools/path/linux-x86" >> $GITHUB_PATH
         if [ -n "${CLANG_BIN_PATH:-}" ] && [ -x "${CLANG_BIN_PATH}/clang" ]; then
           export PATH="${CLANG_BIN_PATH}:$PATH"
         fi
