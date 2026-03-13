@@ -329,7 +329,7 @@ runs:
         echo "::group::Build kernel"
         KERNEL_PATH="$GITHUB_WORKSPACE/$CONFIG/kernel_platform"
         OUT="$KERNEL_PATH/../out/target/product/gta9/obj/KERNEL_OBJ/kernel-5.10"
-        cd "$KERNEL_PATH"
+        cd "$CONFIG"
 
         # Ensure Python warnings are suppressed for scripts invoked by make
         export PYTHONWARNINGS="${PYTHONWARNINGS}"
