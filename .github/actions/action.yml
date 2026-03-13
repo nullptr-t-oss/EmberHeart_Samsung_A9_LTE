@@ -249,7 +249,7 @@ runs:
         echo "::group::Applying build based configs..."
         cd "$CONFIG/kernel_platform/common"
 
-        ./scripts/config --file arch/arm64/configs/gta9_00_defconfig \
+        ./scripts/config --file arch/arm64/configs/gta9_defconfig \
           --enable CONFIG_LTO_CLANG_THIN \
           --enable CONFIG_LTO_CLANG \
           --enable CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE \
@@ -349,7 +349,7 @@ runs:
         export CC=ccache clang
         OUT=out
         mkdir -p "$OUT"
-        make O="$OUT" gta9_00_defconfig
+        make O="$OUT" gta9_defconfig
 
         # LOCALVERSION branding
         if [ -n "${CUSTOM_LOCALVERSION:-}" ]; then
